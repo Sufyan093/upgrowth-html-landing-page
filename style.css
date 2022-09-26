@@ -24,12 +24,8 @@ nav {
   z-index: 10;
 }
 .logo {
-  padding: 1vh 1vw;
+  display: flex;
   text-align: center;
-}
-.logo img {
-  height: 10vh;
-  width: 10vw;
 }
 .nav-links {
   display: flex;
@@ -60,9 +56,9 @@ nav {
   transition: all ease-in-out 250ms;
   margin: 0 0 0 10%;
 }
-.nav-links li a:hover::before {
+/* .nav-links li a:hover::before {
   width: 80%;
-}
+} */
 .login-button {
   color: #fafafa;
   background-color: transparent;
@@ -106,6 +102,9 @@ nav {
   display: none;
 }
 @media screen and (max-width: 600px) {
+  .logo {
+    margin-left: 1rem;
+  }
   .pricing_btn {
     margin-bottom: 1rem !important;
   }
@@ -116,6 +115,7 @@ nav {
     flex-direction: column;
   }
   nav {
+    justify-content: space-between;
     padding-top: 0rem;
     position: sticky;
     z-index: 3;
@@ -218,6 +218,7 @@ nav {
   -o-border-radius: 10px;
 }
 .upgrowth_btn:hover {
+  cursor: pointer;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background: #ffffff;
 }
@@ -265,9 +266,9 @@ nav {
 .col-span-2 .card_custom {
   margin-bottom: 4%;
 }
-.card_custom:nth-child(2) {
+/* .card_custom:nth-child(2) {
   margin-left: 72px;
-}
+} */
 .community_grid_sec {
   padding-bottom: 100px;
 }
